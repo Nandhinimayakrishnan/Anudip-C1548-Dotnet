@@ -1,0 +1,1 @@
+ 2) List of employees is available in listbox.Write an application to add selected or all records from listbox(assume multi-line property of textbox is true).
