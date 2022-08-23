@@ -1,0 +1,18 @@
+﻿<html>
+<body>
+    <br />
+    @model Areaofsquare.Models.Square
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+     {
+        <label>Enter side</label>
+        @Html.Editor("side");<br />
+       // <label>Enter side2</label>
+       // @Html.Editor("side");<br />
+        <input type="submit" value="calculate" />
+        <label>Area of Square</label>
+        @Html.Display("result");<br />
+
+     }
+
+</body>  
+</html>
