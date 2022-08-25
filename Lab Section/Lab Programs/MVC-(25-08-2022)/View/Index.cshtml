@@ -1,0 +1,16 @@
+﻿@model WebApplication23.Models.Arithmetic
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <label>Enter First Number</label>
+    @Html.Editor("Firstnumber")<br />
+    <label>Enter Second Number</label>
+    @Html.Editor("Secondnumber")<br />
+    <input type="submit" value="Addition" asp-for="Calculation" />
+    <input type="submit" value="Subtraction" asp-for="Calculation" />
+    <input type="submit" value="Multiplication" asp-for="Calculation" />
+    <input type="submit" value="Division" asp-for="Calculation" /><br />
+    <label>Result</label>
+    @Html.Display("Result")<br/>
+
+
+}
