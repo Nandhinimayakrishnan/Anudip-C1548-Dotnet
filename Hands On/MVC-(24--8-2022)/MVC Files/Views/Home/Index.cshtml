@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<html>
+<body>
+    
+    @model Palindromes.Models.Palindromee
+       @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+            <div>
+                <br />
+                <br />
+                <h1 style="color : black ; font-weight : bold">Palindrome or Not</h1>
+                <br />
+
+                <label>Enter Number to Check : </label>
+                @Html.Editor("firstnumber")
+                <br />
+                <input type="submit" value="check" />
+                <br />
+                <br />
+                <p style="font-size : x-large ;font-weight : bolder ;color : midnightblue">
+                @Html.Display("result")</p>
+                <br />
+            </div>
+
+        }
+       
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
